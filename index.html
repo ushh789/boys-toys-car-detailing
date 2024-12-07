@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
+    <header data-include="partials/index.header.partial.html"></header>
+    <main>
+        <section data-include="partials/index.banner.partial.html"></section>
+        <svg class="divider" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0,0 100,0 50,100" />
+           </svg>
+    </main>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script src="js/index.js"></script>
+    
 </body>
 </html>
