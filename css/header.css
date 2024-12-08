@@ -170,11 +170,15 @@ video {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  transition: all 0.35s ease;
+  transition: all 0.6s ease;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .header.on-scroll {
-  background: var(--color-black-300);
-  box-shadow: var(--shadow-medium);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100%);
 }
 
 .navbar {
@@ -211,16 +215,20 @@ video {
   position: fixed;
   top: -100%;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
   width: 100%;
   height: auto;
   padding: 4rem 0 3rem;
   overflow: hidden;
   background-color: var(--color-black-300);
   box-shadow: var(--shadow-medium);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease;
 }
 .menu.is-active {
   top: 0;
+  opacity: 1;
+  visibility: visible;
   width: 100%;
   height: auto;
 }
@@ -276,6 +284,8 @@ video {
   .menu {
     position: relative;
     top: 0;
+    opacity: 1;
+    visibility: visible;
     width: auto;
     height: auto;
     padding: 0rem;
