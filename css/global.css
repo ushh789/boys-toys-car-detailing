@@ -33,7 +33,9 @@
    --color-gray-300: hsl(0, 0%, 76%);
    --color-gray-400: hsl(0, 0%, 35%);
    --color-gray-500: hsl(0, 0%, 30%);
+   --color-gray-550: hsl(0, 0%, 20%);
    --color-gray-600: hsl(0, 0%, 15%);
+   --color-gray-700: hsl(0, 0%, 10%);
       
 
    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
