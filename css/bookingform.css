@@ -101,6 +101,92 @@
     z-index: 1;
 }
 
+/* Загальні стилі для модального вікна */
+.custom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Напівпрозорий фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    padding: 2rem; /* Відступи від країв екрану */
+  }
+  
+  .modal-content {
+    background-color: var(--color-white-100);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 30rem; 
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0.5, 0.5), 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+  
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .close:hover {
+    color: #f00; /* Колір при наведенні */
+  }
+  
+  #alert-message {
+    font-size: 1.4rem;
+    color: var(--color-gray-600);
+    margin-top: 1rem;
+  }
+
+  /* Заголовок модального вікна */
+#modal-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem; /* Відступ від тексту */
+    color: var(--color-gray-600);
+  }
+    
+  /* Медіа-запит для екранів від 48rem */
+  @media (min-width: 48rem) {
+    .modal-content {
+      width: 50%; /* Для більших екранів ширина модального вікна 50% */
+      max-width: 40rem; /* Максимальна ширина для середніх екранів */
+    }
+  
+    .close {
+      font-size: 2.5rem; /* Збільшуємо розмір кнопки на більших екранах */
+    }
+  
+    #alert-message {
+      font-size: 1.6rem; /* Збільшуємо розмір тексту */
+    }
+  }
+  
+  /* Додаткові стилі для анімації появи модального вікна */
+  .custom-modal.show {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
 
 
 @media (min-width: 48rem) {

@@ -34,8 +34,15 @@ video {
 
 .divider {
   width: 100%;
-  height: 10vh;
+  top: 0;
+  height: 15vh;
   fill: var(--color-gray-600);
+}
+.divider-black {
+  width: 100%;
+  top: 0;
+  height: 15vh;
+  fill: var(--color-black-500);
 }
 
 .segment {
@@ -186,8 +193,8 @@ video {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  -moz-column-gap: 1.25rem;
-       column-gap: 1.25rem;
+  -moz-column-gap: 1.65rem;
+       column-gap: 1.65rem;
   width: 100%;
   height: 7rem;
 }
@@ -195,7 +202,7 @@ video {
 .brand {
   display: block;
   width: 4%;
-  min-width: 3rem;
+  min-width: 3.7rem;
   transition: all 0.4s ease-in-out;
 }
 .brand img {
@@ -221,7 +228,7 @@ video {
   height: auto;
   padding: 4rem 0 3rem;
   overflow: hidden;
-  background-color: var(--color-black-300);
+  background: linear-gradient(180deg, var(--color-black-500), var(--color-gray-600));
   box-shadow: var(--shadow-medium);
   transition: all 0.3s ease;
 }
@@ -251,8 +258,8 @@ video {
 .menu-block {
   display: inline-block;
   font-family: inherit;
-  font-size: 0.675rem;
-  font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 600;
   line-height: 1.25;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -261,7 +268,7 @@ video {
   align-items: center;
   text-align: center;
   margin-left: auto;
-  padding: 0.45rem 1.3rem;
+  padding: 0.55rem 1.3rem;
   border-radius: 3rem;
   text-transform: capitalize;
   color: var(--color-black-200);
