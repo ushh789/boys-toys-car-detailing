@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8081:8081" 
+    volumes:
+      - ./backend:/app
+    env_file:
+      - .env
+    entrypoint: |
+      /bin/sh -c "
+        rm -rf /app/* && \
+        git clone $REPO_URL /app &&
+        cd /app &&
+        pip install --no-cache-dir flask flask-cors requests python-dotenv gunicorn && \
+        gunicorn -b 0.0.0.0:8081 main:app"
