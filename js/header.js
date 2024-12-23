@@ -31,3 +31,10 @@ window.addEventListener("resize", () => {
       }
    }
 });
+
+document.addEventListener("scroll", function () {
+   const bannerImage = document.querySelector(".banner-image");
+   const scrollPosition = window.scrollY;
+   bannerImage.style.transform = `translateY(${scrollPosition * 0.8}px)`;
+ });
+ 

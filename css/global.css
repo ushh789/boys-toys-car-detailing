@@ -72,8 +72,13 @@ body {
    height: -webkit-fill-available;
    color: var(--color-white-100);
    background-color: var(--color-white-100);
-   /* background: linear-gradient(#bdbdbd, #f5f5f5); */
+   -ms-overflow-style: none;
 }
+
+body::-webkit-scrollbar {
+   display: none;
+}
+
 
 main {
    overflow: hidden;
