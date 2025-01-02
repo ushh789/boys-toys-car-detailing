@@ -1,5 +1,7 @@
 document.addEventListener('partialsLoaded', function() {
     import('./header.js');
-    import('./bookingform.js'); //TODO: Add custom modal window
+    import('./bookingform.js'); 
     import('./price-list.js');
+    import('./about.js');
+    import('./contact.js');
 });

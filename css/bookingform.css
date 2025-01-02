@@ -1,36 +1,39 @@
 
 .contact-form-section {
-    background-color: var(--color-white-100);
-    padding: 3rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
+  background: linear-gradient(to bottom, var(--color-gray-400), var(--color-gray-500));
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
 }
 
 .form-container {
-    background: linear-gradient(to bottom, var(--color-gray-300), var(--color-gray-200));
-
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    max-width: 100%;
-    box-shadow: var(--shadow-large);
+  margin: 3rem 2rem;
+  padding: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  background: var(--color-gray-550);
 }
 
 .form-container h2 {
     font-family: inherit;
-    font-size: 1.75rem;
-    color: var(--color-black-500);
+    font-size: 1.95rem;
+    color: var(--color-white-100);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     margin-bottom: 1rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .form-container p {
     font-family: inherit;
-    font-size: 1.125rem;
-    color: var(--color-black-500);
+    font-size: 1.225rem;
+    color: var(--color-white-100);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .contact-form {
@@ -41,13 +44,20 @@
 
 .contact-form input {
     font-family: inherit;
-    width: 100%;
+    width: 80%;
     padding: 1rem;
     border: none;
     border-radius: 0.5rem;
     font-size: 1rem;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    align-self: center;
 }
+.contact-form input:focus {
+  outline: none;
+  box-shadow: 0 0 1.5rem rgba(255, 255, 255, 1);
+  transition: all 0.3s ease;
+}
+
 
 .contact-form button {
     position: relative;
@@ -189,7 +199,7 @@
 
 
 
-@media (min-width: 48rem) {
+@media (min-width: 32rem) {
     .form-container {
         max-width: 60rem;
         width:100%;

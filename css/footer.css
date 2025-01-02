@@ -1,0 +1,126 @@
+.footer {
+    background: linear-gradient(0deg, var(--color-black-500), var(--color-gray-600));
+    min-height: 50vh;
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.footer__content__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__copyright p {
+    font-size: 0.975rem;
+}
+
+.footer__content__logo img {
+    max-width: 10rem;
+    height: auto;
+}
+
+.footer__nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__nav__item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer___contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__contact__phone, 
+.footer__contact__email, 
+.footer__contact__address {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.footer__contact__social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Середні екрани (min-width: 48rem) */
+@media (min-width: 48rem) {
+    .footer__content {
+        
+        margin-left: 5rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:6rem;
+    }
+
+    .footer__nav__list {
+        flex-direction: column;
+    }
+
+    .footer__contact__phone, 
+    .footer__contact__email, 
+    .footer__contact__address {
+        font-size: 1.2rem;
+    }
+
+    .footer__contact__social__link {
+        font-size: 2rem;
+    }
+}
+
+/* Великі екрани (min-width: 64rem) */
+@media (min-width: 64rem) {
+    .footer__content {
+        gap:10rem;
+    }
+
+    .footer__contact__phone, 
+    .footer__contact__email, 
+    .footer__contact__address {
+        font-size: 1.2rem;
+    }
+
+    .footer__contact__social__link {
+        font-size: 2rem;
+    }
+}
