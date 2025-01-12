@@ -1,5 +1,5 @@
 .footer {
-    background: linear-gradient(0deg, var(--color-black-500), var(--color-gray-600));
+    background: linear-gradient(180deg, var(--color-black-500), var(--color-black-400));
     min-height: 50vh;
     color: #fff;
     padding: 4rem 1rem;
@@ -64,6 +64,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
+
+.footer___contact a{
+    color: var(--color-white-100);
 }
 
 .footer__contact__phone, 

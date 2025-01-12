@@ -6,7 +6,7 @@
 }
 
 .price-list {
-  background: linear-gradient(0deg, var(--color-black-500), var(--color-gray-600));
+  background: linear-gradient(180deg, var(--color-black-500), var(--color-gray-600));
   min-height: 120vh;
   margin: 0;
   position: relative;
@@ -317,6 +317,6 @@ ul.services li {
 }
 
 .triangle-divider-top .shape-fill {
-  fill: var(--color-gray-500);
+  fill: var(--color-gray-600);
 }
 
