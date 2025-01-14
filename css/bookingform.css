@@ -1,6 +1,6 @@
 
 .contact-form-section {
-  background: linear-gradient(to bottom, var(--color-gray-400), var(--color-gray-500));
+  background: linear-gradient(to bottom, var(--color-gray-500), var(--color-gray-600));
   padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
