@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:8081/price_list';
+const apiUrl = 'http://boystoys.com.ua/price_list';
 const localStorageKey = 'priceListData'; 
 const expirationKey = 'priceListExpiration';
 
