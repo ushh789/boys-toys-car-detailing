@@ -1,5 +1,5 @@
 // URL для вашого REST API
-const apiUrl = 'http://backend:8081/price_list';
+const apiUrl = 'http://localhost:8081/price_list';
 const localStorageKey = 'priceListData'; 
 const expirationKey = 'priceListExpiration';
 
