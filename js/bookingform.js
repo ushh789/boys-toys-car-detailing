@@ -9,7 +9,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         phone: phone
     };
 
-    fetch('http://localhost:8081/send', {
+    fetch('http://backend:8081/send', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
