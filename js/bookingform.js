@@ -9,7 +9,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         phone: phone
     };
 
-    fetch('http://boystoys.com.ua/send', {
+    fetch('https://boystoys.com.ua/send', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
