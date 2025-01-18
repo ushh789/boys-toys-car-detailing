@@ -1,10 +1,10 @@
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        loop: true, // Зациклювання слайдів
-        margin: -25, // Відстань між слайдами
+        loop: true,
+        margin: -25,
         nav: false,
         dots: true,
-        autoplay: true, // Автоматичне прокручування
+        autoplay: true,
         autoplayTimeout: 3500,
         autoplayHoverPause: true,
         smartSpeed: 1000,
