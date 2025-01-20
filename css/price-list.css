@@ -8,7 +8,7 @@
 .price-list {
   background: linear-gradient(180deg, var(--color-black-500), var(--color-gray-600));
   min-height: 120vh;
-  margin: 0;
+  padding: 0 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@
   font-size: 0.9rem;
   color: var(--color-gray-300);
   margin-top: 0.5rem;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .services {
@@ -201,7 +201,7 @@ ul.services li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: 2.5;
+  line-height: 2;
 }
 
 .service-details {

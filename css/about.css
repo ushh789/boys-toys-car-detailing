@@ -55,7 +55,7 @@
         
         .gallery-item {
             flex: 1;
-            height: 400px;
+            height: 300px;
             overflow: hidden;
             border-radius: 0.5rem;
             box-shadow: 0 0 1.1rem rgba(0, 0, 0, 0.4);
@@ -75,7 +75,7 @@
     
     .bottom-row {
         .gallery-item.large {
-            height: 600px;
+            height: 450px;
             overflow: hidden;
             border-radius: 0.5rem;
             box-shadow: 0 0 1.1rem rgba(0, 0, 0, 0.4);
