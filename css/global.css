@@ -76,6 +76,8 @@ body {
    -ms-overflow-style: none;
 }
 
+body, html { overscroll-behavior: none; }
+
 body::-webkit-scrollbar {
    display: none;
 }
