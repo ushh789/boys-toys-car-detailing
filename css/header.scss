@@ -503,18 +503,18 @@ video {
       display: grid;
       align-items: center;
       row-gap: 3rem;
-      padding: 9rem 1rem;
+      padding: 9rem 2rem;
 
       // Media Query Breakpoint
       @media only screen and (min-width: 48rem) {
          grid-template-columns: 1fr 1fr;
-         padding: 4rem 1rem 9rem 1rem; 
+         padding: 4rem 1rem 9rem 2rem; 
       }
 
       @media only screen and (min-width: 64rem) {
          grid-template-columns: 1fr max-content;
          column-gap: 4rem;
-         padding: 7rem 1rem 9rem 1rem;
+         padding: 7rem 1rem 9rem 2rem;
       }
    }
 
