@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  position: relative; 
+  position: relative;
 }
 
 .price-list {
@@ -17,30 +17,33 @@
   padding-top: 15rem;
   overflow: hidden;
 }
+
 @media screen and (min-width: 48rem) {
   .price-list {
     padding-top: 12rem;
   }
-  
+
 }
+
 .price-heading {
   font-family: inherit;
-  font-size: clamp(2.648rem, 6vw, 4.241rem);
+  font-size: var(--heading-font-size);
   text-align: center;
   font-weight: 600;
   line-height: 9;
   letter-spacing: -1px;
   position: absolute;
   z-index: 1;
-  left:50%;
+  left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
+
 @media screen and (min-width: 48rem) {
   .price-heading {
     line-height: 5;
   }
-  
+
 }
 
 .container-price-list {
@@ -59,7 +62,7 @@
   width: 100%;
 }
 
-.type-of-service{
+.type-of-service {
   font-size: 1.5em;
   color: var(--color-white-100);
   font-weight: 500;
@@ -160,7 +163,14 @@
   display: none;
   list-style-type: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 150rem) {
+  .services {
+    margin: 10rem 0;
+  }
+
 }
 
 .services.open {
@@ -215,10 +225,12 @@ ul.services li {
   .price-list {
     justify-content: center;
   }
+
   .container-price-list {
     flex-direction: row;
     margin-bottom: 5rem;
   }
+
   .categories-column {
     width: 35%;
     align-self: center;
@@ -245,7 +257,7 @@ ul.services li {
     display: block;
     position: absolute;
     letter-spacing: 1.5rem;
-    font-size: 10rem;
+    font-size: 12vw;
     font-weight: bold;
     color: var(--color-gray-550);
     user-select: none;
@@ -279,6 +291,7 @@ ul.services li {
     from {
       transform: translateX(50%);
     }
+
     to {
       transform: translateX(-50%);
     }
@@ -298,6 +311,7 @@ ul.services li {
     font-size: 1.3em;
   }
 }
+
 .triangle-divider-top {
   position: absolute;
   top: 0;
@@ -319,4 +333,3 @@ ul.services li {
 .triangle-divider-top .shape-fill {
   fill: var(--color-gray-600);
 }
-
